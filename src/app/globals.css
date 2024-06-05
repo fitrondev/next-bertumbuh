@@ -53,6 +53,11 @@
   * {
     @apply border-border;
   }
+
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
   body {
     @apply bg-background font-poppins text-foreground;
   }
