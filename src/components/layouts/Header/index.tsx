@@ -32,11 +32,15 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "shadow-sm lg:shadow-lg",
+        "shadow-sm",
         scroll &&
-          "sticky top-0 left-0 bg-white transition-all duration-700 ease-in-out lg:shadow-md z-50"
+          "sticky top-0 left-0 bg-white transition-all duration-500 ease-in-out lg:shadow-md z-50"
       )}>
-      <div className="container h-16 lg:h-20 flex items-center justify-between">
+      <div
+        className={cn(
+          "container h-16 lg:h-20 flex items-center justify-between",
+          scroll && "lg:h-16"
+        )}>
         <div>
           <Logo />
         </div>
@@ -53,12 +57,13 @@ const Header = () => {
         </div>
       </div>
 
-      <Separator className={cn("hidden lg:block", scroll && "lg:hidden")} />
+      <Separator className={cn("hidden lg:hidden", scroll && "lg:block")} />
 
       <div
         className={cn(
-          "hidden container h-12 lg:flex items-center",
-          scroll && "lg:hidden transition-all duration-300 ease-in-out"
+          "hidden",
+          scroll &&
+            "container h-12 lg:flex items-center transition-all duration-500 ease-in-out"
         )}>
         <NavLinks />
       </div>
