@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="py-10 lg:py-20">
       <div className="container sm:h-[350px] lg:h-[550px] flex flex-col sm:flex-row-reverse gap-10 sm:gap-8 lg:gap-24">
-        <div className="sm:flex-1 flex flex-col items-center justify-center sm:items-start sm:justify-between lg:justify-start gap-5 sm:gap-0 lg:gap-20">
+        <div className="sm:flex-1 flex flex-col sm:justify-between lg:justify-start gap-5 sm:gap-0 lg:gap-20">
           <Title section="Tentang Kami" title="BERTUMBUH - Save The World" />
 
           <p className="lg:text-xl text-justify text-muted-foreground">
