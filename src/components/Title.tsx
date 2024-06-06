@@ -14,7 +14,7 @@ const Title = ({
   return (
     <div
       className={cn(
-        "space-y-2 flex flex-col items-center justify-center lg:items-start lg:justify-start",
+        "space-y-2 flex flex-col items-center justify-center sm:items-start sm:justify-start",
         className
       )}>
       <span className="text-lg sm:text-2xl text-primary font-medium">
