@@ -8,7 +8,7 @@ const Title = ({
   titleClassName,
   descClassName,
 }: {
-  section: string;
+  section?: string;
   title: string;
   description?: string;
   className?: string;
