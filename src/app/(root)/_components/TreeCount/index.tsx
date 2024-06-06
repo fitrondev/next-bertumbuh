@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TreeCount = () => {
   return (
-    <section className="py-20">
+    <section className="py-10 lg:py-20">
       <div className="container flex items-center justify-center">
         <div className="inline-flex items-center gap-5 lg:gap-10">
           <Image
