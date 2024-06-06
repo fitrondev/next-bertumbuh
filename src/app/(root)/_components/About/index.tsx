@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 const About = () => {
   return (
     <section className="py-10 lg:py-20">
-      <div className="container lg:h-[550px] flex flex-col lg:flex-row-reverse gap-10 lg:gap-24">
-        <div className="lg:flex-1 flex flex-col items-center justify-center lg:items-start lg:justify-start gap-5 lg:gap-20">
+      <div className="container sm:h-[350px] lg:h-[550px] flex flex-col sm:flex-row-reverse gap-10 sm:gap-8 lg:gap-24">
+        <div className="sm:flex-1 flex flex-col items-center justify-center sm:items-start sm:justify-between lg:justify-start gap-5 sm:gap-0 lg:gap-20">
           <Title section="Tentang Kami" title="BERTUMBUH - Save The World" />
 
-          <p className="lg:text-xl text-justify text-muted-foreground sm:text-center lg:text-justify">
+          <p className="lg:text-xl text-justify text-muted-foreground">
             BERTUMBUH - Adalah organisasi non-profit yang mempunyai tujuan untuk
             Melindungi, menjaga, merawat, dan melestarikan pohon-pohon yang ada
             di bumi yang kita pijak sekarang.
@@ -23,7 +23,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative w-full h-[350px] sm:h-[500px] lg:flex-1 lg:h-full">
+        <div className="relative w-full h-[350px] sm:flex-1 sm:h-full">
           <Image
             src={"/images/about.jpg"}
             alt=""
