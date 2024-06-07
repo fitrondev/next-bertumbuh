@@ -10,6 +10,7 @@ import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import MenuDropdown from "./MenuDropdown";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -41,15 +42,17 @@ const Header = () => {
           "container h-16 lg:h-20 flex items-center justify-between",
           scroll && "lg:h-16"
         )}>
-        <div>
+        <div className="lg:inline-flex items-center gap-5">
           <Logo />
+
+          <MenuDropdown />
         </div>
 
         <div>
           <div className="hidden lg:flex gap-5">
             <SearchForm />
             <Button size={"sm"} asChild>
-              <Link href="/login">Bergabung</Link>
+              <Link href="/join-us">Bergabung</Link>
             </Button>
           </div>
 
