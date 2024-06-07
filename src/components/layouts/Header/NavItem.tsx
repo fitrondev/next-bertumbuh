@@ -11,30 +11,26 @@ const navData = [
   },
   {
     title: "Tentang Kami",
-    path: "/tentang",
+    path: "/about",
   },
   {
-    title: "Kami Butuh Kamu",
-    path: "/kami-butuh-kamu",
+    title: "Kami Butuh Anda",
+    path: "/join-us",
   },
   {
     title: "Blog",
     path: "/blog",
   },
   {
-    title: "Newsletter",
-    path: "/newsletter",
-  },
-  {
     title: "Bergabung",
-    path: "/registration",
+    path: "/join-us",
   },
 ];
 
 const NavItem = () => {
   return (
     <>
-      {navData.slice(0, 6).map((item, index) => (
+      {navData.slice(0, 5).map((item, index) => (
         <Link
           key={index}
           href={item.path}
@@ -43,7 +39,7 @@ const NavItem = () => {
         </Link>
       ))}
 
-      {navData.slice(6).map((item, index) => (
+      {navData.slice(5).map((item, index) => (
         <Link
           key={index}
           href={item.path}
